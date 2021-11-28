@@ -1,0 +1,72 @@
+@import './global/variables';
+@import './global/functions';
+
+@import './libs/normalize';
+@import './libs/bootstrap-grid';
+
+@import './sections/loader';
+@import './sections/header';
+@import './sections/banner';
+@import './sections/about';
+@import './sections/lesson';
+@import './sections/review';
+@import './sections/footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Old Standard TT', serif;
+    font-size: 16px;
+    color: black;
+
+    &.hidden {
+        overflow: hidden;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+.container_relative {
+    position: relative;
+}

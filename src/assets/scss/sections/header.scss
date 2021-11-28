@@ -1,0 +1,48 @@
+.header {
+    padding: 34px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            border-top: 1px solid #F137A6;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            color: #F137A6;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        display: none;
+    }
+}

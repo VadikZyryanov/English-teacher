@@ -1,0 +1,21 @@
+.header {
+    padding: 34px 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+}

@@ -1,0 +1,222 @@
+.about {
+    position: relative;
+    padding-top: 50px;
+
+    &__title {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 80px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 0px;
+            border-bottom: 5px solid #000;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-delay: 3s;
+        }
+
+        &.go {
+            &::after {
+                animation: width 1.5s ease forwards;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &-wrapper {
+            background-color: #FFE8F7;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 270px;
+            height: 310px;
+            margin-left: auto;
+            margin-right: 70px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+
+        &_background {
+            background-color: #D9F6FF;
+            padding: 8px 5px 5px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+    }
+
+    &__text {
+        position: relative;
+        font-family: Cormorant;
+        font-size: 16px;
+        line-height: 24px;
+        color: #434343;
+        max-width: 305px;
+        transition: all 0.5s ease;
+        margin-right: 20px;
+
+        &:nth-child(2) {
+            margin-top: 20px;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 9px;
+            height: 9px;
+            top: 7px;
+            left: -15px;
+            border-radius: 50%;
+            background-color: #AFEDFA;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 90%;
+            bottom: -10px;
+            left: 0;
+            border-bottom: 2px solid #AFEDFA;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            color: #000;
+
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 450px;
+            margin-top: 22px;
+            padding-bottom: 150px;
+        }
+    }
+}
+
+svg.about__svg {
+    .text {
+        display: none;
+    }
+
+    &.go {
+        .text {
+            font-family: Open Sans;
+            font-size: 46px;
+            line-height: 65px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .text-stroke {
+            fill: none;
+            stroke: #000;
+            stroke-width: 10px;
+            stroke-dashoffset: -900;
+            stroke-dasharray: 900;
+            stroke-linecap: butt;
+            stroke-linejoin: round;
+            animation: dash 1.5s ease forwards;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .about {
+        &__text {
+            max-width: 265px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .about {
+        &__text {
+            max-width: 320px;
+
+            &-wrapper {
+                height: 270px;
+                padding-bottom: 0;
+            }
+        }
+
+        &__image {
+            &-wrapper {
+                display: none;
+            }
+        }
+
+        &__title {
+            padding-top: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        &__text {
+            max-width: 320px;
+
+            &-wrapper {
+                height: auto;
+                padding-bottom: 25px;
+            }
+
+            &:nth-child(3) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .about {
+        &__title {
+            padding-bottom: 60px;
+        }
+
+        &__subtitle {
+            margin-left: 15px;
+        }
+
+        &__text {
+            &-wrapper {
+                margin-left: 15px;
+            }
+
+            &:nth-child(3) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    svg.about__svg {
+        &.go {
+            .text {
+                font-size: 38px;
+            }
+        }
+    }
+}
+
+.svg__box {
+    display: flex;
+    justify-content: center;
+}
