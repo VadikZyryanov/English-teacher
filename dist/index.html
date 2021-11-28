@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="loader">
+    <svg class="loader__svg" viewBox="0 0 600 300">
+        <symbol id="s-text">
+            <text text-anchor="middle"
+                x="50%"
+                y="40%"
+                class="text--line"
+                >
+            Julia
+            </text>
+            <text text-anchor="middle"
+                x="50%"
+                y="60%"
+                class="text--line2"
+                >
+            Stepnova
+            </text>
+            
+        </symbol>
+
+        <g class="g-ants">
+            <use xlink:href="#s-text"
+            class="text-copy"></use>     
+            <use xlink:href="#s-text"
+            class="text-copy"></use>     
+            <use xlink:href="#s-text"
+            class="text-copy"></use>       
+        </g>
+    </svg>
+</section>
+    <header class="header">
+    <div class="container container_relative">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#about" class="navigation__link">обо мне</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#lesson" class="navigation__link">занятия</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#review" class="navigation__link">отзывы</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#footer" class="navigation__link">задать вопрос</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <section class="banner">
+    <div class="container">
+        <div class="banner__logo-wrapper">
+            <img src="./assets/img/logo.svg" alt="logo" class="banner__logo">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="banner__images">
+                    <div class="banner__photo-wrapper">
+                        <img src="./assets/img/photo_banner.png" alt="banner-photo" class="banner__photo">
+                    </div>
+                    <div class="banner__circle banner__circle--one"></div>
+                    <div class="banner__circle banner__circle--two"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="banner__content">
+                    <h1 class="banner__title">Привет, я Юля.
+Я научу тебя думать на английском, как на родном языке</h1>
+                    <p class="banner__subtitle">LET ME BE YOUR TEACHER </p>
+                    <a href="#lesson" class="banner__button-link">
+                        <button class="banner__button">
+                            <span class="banner__button-text">занятия</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="about" id="about">
+    <div class="container">
+        <div class="about__title title animate-go">
+            <div class="svg__box">
+                <svg class="about__svg animate-go" >
+                    <text text-anchor="middle" x="50%" y="50%" class="text text-stroke" clip-path="url(#text1)">Обо мне</text>
+                    <defs>
+                        <clipPath id="text1">
+                            <text text-anchor="middle" x="50%" y="50%" class="text">Обо мне</text>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="about__image-wrapper">
+                    <img src="./assets/img/photo-teacher.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <p class="about__subtitle">Пару слов о <span class="about__subtitle_background">себе:</span></p>
+                <div class="about__text-wrapper">
+                    <p class="about__text">Я преподаю английский более 5 лет. На моем счету свыше 200 довольных учеников. У меня большой опыт ведения индивидуальных и групповых уроков.</p>
+                    <p class="about__text">На моих уроках мы прокачиваем все навыки,необходимые для свободного понимания англоязычной речи и умения говорить.</p>
+                    <p class="about__text">В основе моего индивидуального подхода стоит умение найти общий язык с каждым из вас! Я делаю все, чтобы вы могли думать сразу на английском о том, что вам важно. Для меня успех, когда абсолютно правильно, взахлеб от эмоций вы рассказываете о своих делах, отпуске, интересах или просто о ridiculous situations (нелепых ситуациях), используя все возможные прилагательные, которые будут здесь уместны! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="lesson" id="lesson">
+    <div class="container">
+        <div class="lesson__title title animate-go">
+            <div class="svg__box">
+                <svg class="lesson__svg animate-go">
+                    <text text-anchor="middle" x="50%" y="50%" class="text text-stroke" clip-path="url(#text2)">Занятия</text>
+                    <defs>
+                        <clipPath id="text2">
+                            <text text-anchor="middle" x="50%" y="50%" class="text">Занятия</text>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 offset-lg-1 col-xxl-3 offset-xxl-2">
+                <div class="lesson__type">
+                    <button class="lesson__button active">
+                        <span class="lesson__button-text">Индивидуальные</span>
+                    </button>
+                    <button class="lesson__button">
+                        <span class="lesson__button-text">Групповые</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="lesson__tab active">
+                    <p class="lesson__text">Индивидуальные занятия - это уроки, где программа и время выстраиваются исходя из ваших целей, предпочтений, сроков. Мы составляем комфортный для вас график и занятий и интенсивность курса. </p>
+                    <div class="lesson__ind-60">
+                        <p class="lesson__text">1. Индивидуальные занятия от 2-х раз в неделю, длительностью <strong>60</strong> минут</p>
+                        <p class="lesson__text-price"><strong>Стоимость:</strong> разовое занятие - <span class="lesson__text-price_color">1000 руб</span></p>
+                        <p class="lesson__text-price"><strong>Абонимент:</strong> 8 занятий - <span class="lesson__text-price_color">7000 руб</span></p>
+                    </div>
+                    <div class="lesson__ind-90">
+                        <p class="lesson__text">2. Один индивидуальный урок в неделю <strong>90</strong> минут </p>
+                        <p class="lesson__text-price"><strong>Стоимость:</strong> разовое занятие - <span class="lesson__text-price_color">1500 руб</span></p>
+                        <p class="lesson__text-price"><strong>Абонимент:</strong> 4 занятия - <span class="lesson__text-price_color">5500 руб</span></p>
+                    </div>
+                </div>
+
+                <div class="lesson__tab">
+                    <p class="lesson__text">Группа от 2х до 4х человек. Все участники группы примерно одного уровня. Занятия в группе нацелены на развитие и улучшение коммуникативных навыков учащихся на изучаемом языке. График составляется исходя из возможностей учащихся. Цели и пожелания каждого участника группы учитываются.</p>
+                    <div class="lesson__ind-60">
+                        <p class="lesson__text"> 1. Групповые занятия 2 раза в неделю <strong>60</strong> минут</p>
+                        <p class="lesson__text-price"><strong>Абонимент:</strong> 8 занятий - <span class="lesson__text-price_color">5000 руб</span></p>
+                    </div>
+                    <div class="lesson__ind-90">
+                        <p class="lesson__text">2. Групповое занятие 1 раз в неделю <strong>90</strong> минут </p>
+                        <p class="lesson__text-price"><strong>Абонимент:</strong> 4 занятия - <span class="lesson__text-price_color">3500 руб</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="review" id="review">
+    <div class="container">
+        <div class="review__title title animate-go">
+            <div class="svg__box">
+                <svg class="review__svg animate-go">
+                    <text text-anchor="middle" x="50%" y="50%" class="text text-stroke" clip-path="url(#text3)">Отзывы</text>
+                    <defs>
+                        <clipPath id="text3">
+                            <text text-anchor="middle" x="50%" y="50%" class="text">Отзывы</text>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="review__left">
+                    <div class="review__image-wrapper animate-go">
+                        <img src="./assets/img/review2.jpg" alt="review" class="review__image">
+                    </div>
+                    <div class="review__image-wrapper animate-go">
+                        <img src="./assets/img/review.jpg" alt="review" class="review__image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="review__line-wrapper">
+                    <div class="review__line go"></div>
+                    <div class="review__circle go review__circle--one"></div>
+                    <div class="review__circle go review__circle--two"></div>
+                    <div class="review__circle go review__circle--tree"></div>
+                    <div class="review__circle go review__circle--four"></div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="review__right">
+                    <div class="review__image-wrapper animate-go ">
+                        <img src="./assets/img/review3.jpg" alt="review" class="review__image">
+                    </div>
+                    <div class="review__image-wrapper animate-go">
+                        <img src="./assets/img/review4.jpg" alt="review" class="review__image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="footer" id="footer">
+    <div class="container">
+        <div class="footer__title title animate-go">
+            <div class="svg__box">
+                <svg class="footer__svg animate-go">
+                    <text text-anchor="middle" x="50%" y="50%" class="text text-stroke" clip-path="url(#text4)">Контакты</text>
+                    <defs>
+                        <clipPath id="text4">
+                            <text text-anchor="middle" x="50%" y="50%" class="text">Контакты</text>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="footer__content">
+            <a href="/">
+                <button class="footer__mail">
+                    <span>info@mail.com</span>
+                </button>
+            </a>
+            <div class="footer__social">
+                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#facebook"></use></svg>
+                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#instagram"></use></svg>
+                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#telegram"></use></svg>
+                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#viber"></use></svg>
+                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#vk"></use></svg>
+                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#whatsapp"></use></svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
