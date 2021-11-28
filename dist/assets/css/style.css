@@ -3510,7 +3510,7 @@ svg.about__svg.go .text-stroke {
   fill: none;
   stroke: #000;
   stroke-width: 10px;
-  stroke-dashoffset: -900;
+  stroke-dashoffset: 0;
   stroke-dasharray: 900;
   stroke-linecap: butt;
   stroke-linejoin: round;
@@ -3670,7 +3670,7 @@ svg.lesson__svg.go .text-stroke {
   fill: none;
   stroke: #000;
   stroke-width: 10px;
-  stroke-dashoffset: -900;
+  stroke-dashoffset: 0;
   stroke-dasharray: 900;
   stroke-linecap: butt;
   stroke-linejoin: round;
@@ -3678,12 +3678,16 @@ svg.lesson__svg.go .text-stroke {
           animation: dash 1.5s ease forwards; }
 
 @-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 900; }
   100% {
-    stroke-dashoffset: 0; } }
+    stroke-dashoffset: 1800; } }
 
 @keyframes dash {
+  0% {
+    stroke-dashoffset: 900; }
   100% {
-    stroke-dashoffset: 0; } }
+    stroke-dashoffset: 1800; } }
 
 @-webkit-keyframes width {
   100% {
@@ -3818,7 +3822,7 @@ svg.review__svg.go .text-stroke {
   fill: none;
   stroke: #000;
   stroke-width: 10px;
-  stroke-dashoffset: -900;
+  stroke-dashoffset: 0;
   stroke-dasharray: 900;
   stroke-linecap: butt;
   stroke-linejoin: round;
@@ -3934,7 +3938,7 @@ svg.footer__svg.go .text-stroke {
   fill: none;
   stroke: #000;
   stroke-width: 10px;
-  stroke-dashoffset: -900;
+  stroke-dashoffset: 0;
   stroke-dasharray: 900;
   stroke-linecap: butt;
   stroke-linejoin: round;

@@ -161,7 +161,7 @@ svg.lesson__svg {
             fill: none;
             stroke: #000;
             stroke-width: 10px;
-            stroke-dashoffset: -900;
+            stroke-dashoffset: 0;
             stroke-dasharray: 900;
             stroke-linecap: butt;
             stroke-linejoin: round;
@@ -171,8 +171,12 @@ svg.lesson__svg {
 }
 
 @keyframes dash {
+    0% {
+        stroke-dashoffset: 900;
+    }
+
     100% {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 1800;
     }
 }
 
