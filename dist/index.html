@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Old+Standard+TT&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script>history.scrollRestoration = "manual"</script>
     <title>Document</title>
 </head>
 <body class="hidden">
@@ -62,8 +63,22 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </div>  
 </header>
+<nav class="menu-aside">
+    <div class="menu-btn">
+        <div class="line line--1"></div>
+        <div class="line line--2"></div>
+        <div class="line line--3"></div>
+    </div>
+
+    <div class="nav-links">
+        <a href="#about" class="link navigation__item">обо мне</a>
+        <a href="#lesson" class="link navigation__item">занятия</a>
+        <a href="#review" class="link navigation__item">отзывы</a>
+        <a href="#footer" class="link navigation__item">задать вопрос</a>
+    </div>
+</nav>
 
     <main>
         <section class="banner">
@@ -161,26 +176,17 @@
                 <div class="lesson__tab active">
                     <p class="lesson__text">Индивидуальные занятия - это уроки, где программа и время выстраиваются исходя из ваших целей, предпочтений, сроков. Мы составляем комфортный для вас график и занятий и интенсивность курса. </p>
                     <div class="lesson__ind-60">
-                        <p class="lesson__text">1. Индивидуальные занятия от 2-х раз в неделю, длительностью <strong>60</strong> минут</p>
-                        <p class="lesson__text-price"><strong>Стоимость:</strong> разовое занятие - <span class="lesson__text-price_color">1000 руб</span></p>
-                        <p class="lesson__text-price"><strong>Абонимент:</strong> 8 занятий - <span class="lesson__text-price_color">7000 руб</span></p>
-                    </div>
-                    <div class="lesson__ind-90">
-                        <p class="lesson__text">2. Один индивидуальный урок в неделю <strong>90</strong> минут </p>
+                        <p class="lesson__text">Индивидуальные занятия от 2-х раз в неделю, длительностью <strong>60</strong> минут</p>
                         <p class="lesson__text-price"><strong>Стоимость:</strong> разовое занятие - <span class="lesson__text-price_color">1500 руб</span></p>
-                        <p class="lesson__text-price"><strong>Абонимент:</strong> 4 занятия - <span class="lesson__text-price_color">5500 руб</span></p>
+                        <p class="lesson__text-price"><strong>Абонимент:</strong> 8 занятий - <span class="lesson__text-price_color">10 000 руб</span></p>
                     </div>
                 </div>
 
                 <div class="lesson__tab">
                     <p class="lesson__text">Группа от 2х до 4х человек. Все участники группы примерно одного уровня. Занятия в группе нацелены на развитие и улучшение коммуникативных навыков учащихся на изучаемом языке. График составляется исходя из возможностей учащихся. Цели и пожелания каждого участника группы учитываются.</p>
                     <div class="lesson__ind-60">
-                        <p class="lesson__text"> 1. Групповые занятия 2 раза в неделю <strong>60</strong> минут</p>
-                        <p class="lesson__text-price"><strong>Абонимент:</strong> 8 занятий - <span class="lesson__text-price_color">5000 руб</span></p>
-                    </div>
-                    <div class="lesson__ind-90">
-                        <p class="lesson__text">2. Групповое занятие 1 раз в неделю <strong>90</strong> минут </p>
-                        <p class="lesson__text-price"><strong>Абонимент:</strong> 4 занятия - <span class="lesson__text-price_color">3500 руб</span></p>
+                        <p class="lesson__text"> Групповые занятия 2 раза в неделю <strong>60</strong> минут</p>
+                        <p class="lesson__text-price"><strong>Абонимент:</strong> 8 занятий - <span class="lesson__text-price_color">7000 руб</span></p>
                     </div>
                 </div>
             </div>
@@ -223,7 +229,7 @@
             </div>
             <div class="col-lg-5">
                 <div class="review__right">
-                    <div class="review__image-wrapper animate-go ">
+                    <div class="review__image-wrapper review__image-wrapper--2 animate-go ">
                         <img src="./assets/img/review3.jpg" alt="review" class="review__image">
                     </div>
                     <div class="review__image-wrapper animate-go">
@@ -250,25 +256,46 @@
             </div>
         </div>
         <div class="footer__content">
-            <a href="/">
+            <a href="mailto:julia_english.teacher@mail.ru" target="_blank" rel="noopener noreferrer">
                 <button class="footer__mail">
-                    <span>info@mail.com</span>
+                    <span>julia_english.teacher@mail.ru</span>
                 </button>
             </a>
             <div class="footer__social">
-                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#facebook"></use></svg>
-                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#instagram"></use></svg>
-                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#telegram"></use></svg>
-                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#viber"></use></svg>
-                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#vk"></use></svg>
-                <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#whatsapp"></use></svg>
+                <a href="https://www.instagram.com/julia_stepnova/" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#instagram"></use></svg>
+                </a>
+
+                <a href="https://t.me/juliastepnova" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#telegram"></use></svg>
+                </a>
+
+                <a href="https://vk.com/julia_stepnova" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#vk"></use></svg>
+                </a>
+
+                <a href="viber://add?number=79655625454" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#viber"></use></svg>
+                </a>
+
+                <a href="https://www.facebook.com/julia.stepnova" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#facebook"></use></svg>
+                </a>
+
+                <a href="https://wa.me/79655625454" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__social-icon"><use xlink:href="./assets/img/sprite.svg#whatsapp"></use></svg>
+                </a>
             </div>
         </div>
     </div>
 </section>
 
     </main>
-
+    <script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous">
+</script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

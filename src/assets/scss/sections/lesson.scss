@@ -66,9 +66,17 @@
             margin-top: 20px;
         }
 
-        &:hover:not(.active) {
-            box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
-            color: #F137A6;
+        @media (pointer: fine) {
+            &:hover:not(.active) {
+                box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+                color: #F137A6;
+            }
+        }
+
+        &:active {
+            box-shadow: 0 0 10px 0 #b42e7c inset,
+                0 0 10px 4px #b42e7c;
+            color: #b42e7c;
         }
 
         &-text {
@@ -78,7 +86,7 @@
         }
 
         &.active {
-            box-shadow: 0 0 40px 40px #F9869E inset,
+            box-shadow: 0 0 40px 40px #FFDBF2 inset,
                 0 0 0 0 #F137A6;
 
             .lesson__button-text {

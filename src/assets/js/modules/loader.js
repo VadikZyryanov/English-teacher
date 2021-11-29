@@ -1,7 +1,3 @@
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
-
 try {
     const loader = document.querySelector('.loader');
 

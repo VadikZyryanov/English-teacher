@@ -26,6 +26,13 @@ body {
 
     &.hidden {
         overflow: hidden;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    body.hidden {
+        padding-right: 0;
     }
 }
 

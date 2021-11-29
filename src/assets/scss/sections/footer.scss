@@ -47,15 +47,22 @@
     &__mail {
         font-size: 24px;
         font-weight: 700;
-        text-decoration: underline;
         background-color: #FFDBF2;
         padding: 15px;
         border-radius: 30px;
         transition: all 0.2s ease-in-out;
 
-        &:hover {
-            box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
-            color: #F137A6;
+        @media (pointer: fine) {
+            &:hover {
+                box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+                color: #F137A6;
+            }
+        }
+
+        &:active {
+            box-shadow: 0 0 10px 0 #b42e7c inset,
+                0 0 10px 4px #b42e7c;
+            color: #b42e7c;
         }
     }
 
@@ -68,13 +75,16 @@
             width: 40px;
             height: 40px;
             transition: all 0.3s ease;
+            margin: 10px;
 
-            &:not(:last-child) {
-                margin-right: 20px;
+            @media (pointer: fine) {
+                &:hover {
+                    fill: #F137A6;
+                }
             }
 
-            &:hover {
-                fill: #F137A6;
+            &:active {
+                fill: #b42e7c;
             }
         }
     }
@@ -130,9 +140,7 @@ svg.footer__svg {
     .footer {
         &__social {
             &-icon {
-                &:not(:last-child) {
-                    margin-right: 10px;
-                }
+                margin: 5px;
             }
         }
     }
