@@ -124,5 +124,6 @@ modalClose.addEventListener('click', () => {
 })
 
 setTimeout(() => {
+    if (modal.classList.contains('go')) return
     openModal();
 }, 20000)
