@@ -151,6 +151,54 @@ nav .nav-links .link {
     transition: color 300ms ease;
 }
 
+.header__button {
+    position: fixed;
+    width: 140px;
+    height: 50px;
+    top: 20px;
+    right: 50px;
+    display: inline-block;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-weight: 500;
+    border: 2px solid #000;
+    transition: all 0.2s ease-in-out;
+    z-index: 50;
+
+    @media (pointer: fine) {
+        &:hover {
+            box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+            color: #F137A6;
+            border: 2px solid #F137A6;
+        }
+    }
+}
+
+.header__button.go {
+    animation: stripes 2s infinite linear;
+    background: linear-gradient(45deg,
+            #FFE8F7 25%,
+            rgba(255, 255, 255, 1) 25%,
+            rgba(255, 255, 255, 1) 50%,
+            #FFE8F7 50%,
+            #FFE8F7 75%,
+            rgba(255, 255, 255, 1) 75%,
+            rgba(255, 255, 255, 1));
+    background-size: 15px 15px;
+    color: #000;
+}
+
+@keyframes stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 90px 0;
+    }
+}
+
 @media (max-width: 991px) {
     .header {
         display: none;
@@ -163,5 +211,15 @@ nav .nav-links .link {
     .menu-aside.nav-open {
         transform: translateX(0);
         width: 100vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__button {
+        width: 100px;
+        height: 40px;
+        top: 26px;
+        right: 10px;
+        font-size: 14px;
     }
 }

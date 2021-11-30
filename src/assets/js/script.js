@@ -2,3 +2,4 @@
 @@include('./modules/title.js')
 @@include('./modules/scroll.js')
 @@include('./modules/tabs.js')
+@@include('./modules/modal.js')
