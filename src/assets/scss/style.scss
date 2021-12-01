@@ -38,10 +38,7 @@ body {
     color: black;
 
     &.hidden {
-        height: 100%;
         overflow: hidden;
-        width: 100%;
-        position: absolute;
     }
 }
 
