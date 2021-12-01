@@ -19,6 +19,18 @@
     box-sizing: border-box;
 }
 
+@-moz-document url-prefix() {
+
+    /* Disable scrollbar Firefox */
+    html {
+        scrollbar-width: none;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
     font-family: 'Old Standard TT', serif;
@@ -26,8 +38,10 @@ body {
     color: black;
 
     &.hidden {
+        height: 100%;
         overflow: hidden;
-        padding-right: 15px;
+        width: 100%;
+        position: absolute;
     }
 }
 

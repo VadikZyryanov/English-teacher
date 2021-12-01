@@ -4222,14 +4222,24 @@ svg.footer__svg.go .text-stroke {
   padding: 0;
   box-sizing: border-box; }
 
+@-moz-document url-prefix() {
+  /* Disable scrollbar Firefox */
+  html {
+    scrollbar-width: none; } }
+
+::-webkit-scrollbar {
+  display: none; }
+
 body {
   margin: 0;
   font-family: 'Old Standard TT', serif;
   font-size: 16px;
   color: black; }
   body.hidden {
+    height: 100%;
     overflow: hidden;
-    padding-right: 15px; }
+    width: 100%;
+    position: absolute; }
 
 @media (max-width: 991px) {
   body.hidden {
