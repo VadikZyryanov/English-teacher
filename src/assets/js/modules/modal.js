@@ -30,8 +30,10 @@ setTimeout(() => {
 
 const btnSocial = document.querySelector("#btn");
 const itemSocial = document.querySelectorAll(".menu__item");
+const btnModal = document.querySelector(".modal__button");
 
 let showCard = (event) => {
+    event.stopPropagation();
     btnSocial.classList.toggle("is-rotate");
     for (var i = 0; i < itemSocial.length; i++) {
         itemSocial[i].classList.toggle(`item-${i}`);
@@ -39,4 +41,5 @@ let showCard = (event) => {
 }
 
 btn.addEventListener("click", showCard);
+btnModal.addEventListener("click", showCard);
 
