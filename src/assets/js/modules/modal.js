@@ -28,3 +28,15 @@ setTimeout(() => {
     openModal();
 }, 30000)
 
+const btnSocial = document.querySelector("#btn");
+const itemSocial = document.querySelectorAll(".menu__item");
+
+let showCard = (event) => {
+    btnSocial.classList.toggle("is-rotate");
+    for (var i = 0; i < itemSocial.length; i++) {
+        itemSocial[i].classList.toggle(`item-${i}`);
+    }
+}
+
+btn.addEventListener("click", showCard);
+

@@ -1,11 +1,11 @@
-try {
-    const loader = document.querySelector('.loader');
+// try {
+//     const loader = document.querySelector('.loader');
 
-setTimeout(() => {
-    loader.classList.add('active');
-    document.body.classList.remove('hidden');
-}, 3900)
-} catch {}
+// setTimeout(() => {
+//     loader.classList.add('active');
+//     document.body.classList.remove('hidden');
+// }, 3900)
+// } catch {}
 
 const animate = document.querySelectorAll('.animate-go');
 
@@ -129,5 +129,17 @@ setTimeout(() => {
     if (modal.classList.contains('go') || flag) return
     openModal();
 }, 30000)
+
+const btnSocial = document.querySelector("#btn");
+const itemSocial = document.querySelectorAll(".menu__item");
+
+let showCard = (event) => {
+    btnSocial.classList.toggle("is-rotate");
+    for (var i = 0; i < itemSocial.length; i++) {
+        itemSocial[i].classList.toggle(`item-${i}`);
+    }
+}
+
+btn.addEventListener("click", showCard);
 
 
