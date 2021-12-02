@@ -4376,7 +4376,7 @@ svg.footer__svg.go .text-stroke {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center; } }
+    justify-content: start; } }
 
 @media (max-width: 575px) {
   .modal__title {
