@@ -1,11 +1,11 @@
-// try {
-//     const loader = document.querySelector('.loader');
+try {
+    const loader = document.querySelector('.loader');
 
-// setTimeout(() => {
-//     loader.classList.add('active');
-//     document.body.classList.remove('hidden');
-// }, 3900)
-// } catch {}
+setTimeout(() => {
+    loader.classList.add('active');
+    document.body.classList.remove('hidden');
+}, 3900)
+} catch {}
 
 const animate = document.querySelectorAll('.animate-go');
 
